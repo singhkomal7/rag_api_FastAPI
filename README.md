@@ -2,11 +2,11 @@
 
 This project is for building an AI-powered API using modern web frameworks like FastAPI, combined with RAG (Retrieval-Augmented-Generation) to create intelligent APIs that answer questions based on your own knowledge base. 
 
-THe project was completed using the **"Nextwork"** documentation and tutorial.
+The project was completed using the **"Nextwork"** documentation and tutorial.
 
 
 The project was split into 4 parts consisting of building a RAG API with FastAPI, containerization with docker, deployment to kubernetes, and automation testing with GitHub Actions.
-
+---
 
 ## Part 1 - Building a RAG API with FastAPI
 

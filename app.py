@@ -12,6 +12,7 @@ app = FastAPI()
 chroma = chromadb.PersistentClient(path="./db")
 collection = chroma.get_or_create_collection("docs")
 
+#Query the knowledege base
 @app.post("/query")
 def query(q: str):
     results = collection.query(query_texts=[q], n_results=1)
@@ -29,7 +30,7 @@ def query(q: str):
 
     return {"answer": answer["response"]}
 
-
+#Add to the knowledge base
 @app.post('/add')
 def add_knowledge(text: str):\
 
