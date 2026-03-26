@@ -57,3 +57,23 @@ The project was split into 4 parts consisting of building a RAG API with FastAPI
 6.  Create GitHub Actions workflows for automated testing.
 
 7.  Detect data quality issues before they reach production.
+
+
+# Access Your API Using NodePort
+
+ - In your terminal, run this command and press Enter:
+
+```minikube service rag-api-service --namespace=rag-api --url```
+
+# Test Your API
+
+- Open another terminal window.
+
+- Run the command and press Enter:
+
+```curl -X POST "your-api-url/query" -G --data-urlencode "q=What is Kubernetes?"```
+
+
+
+
+

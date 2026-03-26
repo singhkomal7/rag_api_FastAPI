@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rag-api-service
+  namespace: rag-api
 spec:
   selector:
     app: rag-api
